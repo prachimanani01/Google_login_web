@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
-import 'package:google_login_website/scrren/clarify/clarify.dart';
 import 'package:google_login_website/scrren/google_page/google_page.dart';
 import 'package:google_login_website/scrren/password_page/password_page.dart';
 import 'package:google_login_website/scrren/signin_page/signnin_page.dart';
 import 'package:google_login_website/scrren/verification_page/verification_page.dart';
 
+import '../scrren/clarify/clarify.dart';
 import '../scrren/profile_page/profile_page.dart';
 
 class Routes {

@@ -171,7 +171,7 @@ class _PasswordPageState extends State<PasswordPage> {
                           ),
                           activeColor: Colors.blue,
                           checkColor: Colors.white,
-                          side: const BorderSide(
+                          side: BorderSide(
                             color: Colors.grey,
                           ),
                           onChanged: (value) {

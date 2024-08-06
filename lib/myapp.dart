@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_login_website/utils/routes.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,9 +8,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.sizeOf(context);
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      routes: Routes.myRoutes,
+    double height = size.height;
+    double width = size.width;
+    return ScreenUtilInit(
+      designSize: Size(width, height),
+      builder: (context, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          routes: Routes.myRoutes,
+        );
+      },
     );
   }
 }

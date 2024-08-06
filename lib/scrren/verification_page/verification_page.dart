@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/routes.dart';
 
 class VerificationPage extends StatefulWidget {
@@ -17,15 +17,15 @@ class _VerificationPageState extends State<VerificationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: double.infinity,
-        width: double.infinity,
+        height: double.infinity.h,
+        width: double.infinity.w,
         decoration: const BoxDecoration(color: Colors.white),
         child: Column(
           children: [
             const Spacer(),
             Container(
-              height: 650,
-              width: 400,
+              height: 650.h,
+              width: 400.w,
               decoration: BoxDecoration(
                 color: Colors.transparent,
                 border: Border.all(color: Colors.grey.shade300),
@@ -34,62 +34,63 @@ class _VerificationPageState extends State<VerificationPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const SizedBox(
-                    height: 40,
+                  SizedBox(
+                    height: 40.h,
                   ),
-                  const Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "G",
                         style: TextStyle(
                           color: Colors.blue,
-                          fontSize: 22,
+                          fontSize: 22.sp,
                         ),
                       ),
                       Text(
                         "o",
                         style: TextStyle(
                           color: Colors.red,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "o",
                         style: TextStyle(
                           color: Colors.yellow,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "g",
                         style: TextStyle(
                           color: Colors.blue,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "l",
                         style: TextStyle(
                           color: Colors.green,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "e",
                         style: TextStyle(
                           color: Colors.red,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    height: 7,
+                  SizedBox(
+                    height: 7.h,
                   ),
-                  const Text(
+                  Text(
                     "2-Step Verification",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                    style:
+                        TextStyle(fontSize: 20.sp, fontWeight: FontWeight.w500),
                   ),
                   const Center(
                     child: Padding(
@@ -99,8 +100,8 @@ class _VerificationPageState extends State<VerificationPage> {
                     ),
                   ),
                   Container(
-                    height: 25,
-                    width: 250,
+                    height: 25.h,
+                    width: 250.w,
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       border: Border.all(color: Colors.grey.shade300),
@@ -121,37 +122,38 @@ class _VerificationPageState extends State<VerificationPage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 10,
+                  SizedBox(
+                    height: 10.h,
                   ),
-                  const Align(
+                  Align(
                     alignment: Alignment.topLeft,
                     child: Image(
                       image: NetworkImage(
                         'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzzcYwzwKsw_Xp55zUJCMJCvNddb5vuv0Bn36giT-PrOh5HgAV',
                       ),
-                      height: 140,
-                      width: 140,
+                      height: 140.h,
+                      width: 140.w,
                     ),
                   ),
-                  const Align(
+                  Align(
                     alignment: Alignment.topLeft,
                     child: Text(
                       "            Check your Redmi Note 12 5G",
-                      style:
-                          TextStyle(fontWeight: FontWeight.w600, fontSize: 13),
+                      style: TextStyle(
+                          fontWeight: FontWeight.w600, fontSize: 13.sp),
                     ),
                   ),
-                  const Text(
+                  Text(
                     "Google sent a notification to your Redmi Note 12 5G.Tap\nYes on the notification to verify it's you.",
-                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.w300),
+                    style:
+                        TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w300),
                   ),
-                  const SizedBox(
-                    height: 15,
+                  SizedBox(
+                    height: 15.h,
                   ),
                   Padding(
-                    padding: const EdgeInsets.only(
-                      left: 30,
+                    padding: EdgeInsets.only(
+                      left: 30.w,
                     ),
                     child: Row(
                       children: [
@@ -181,8 +183,8 @@ class _VerificationPageState extends State<VerificationPage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 40,
+                  SizedBox(
+                    height: 40.h,
                   ),
                   Align(
                     alignment: Alignment.topLeft,
@@ -194,8 +196,8 @@ class _VerificationPageState extends State<VerificationPage> {
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 75,
+                  SizedBox(
+                    height: 75.h,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -217,17 +219,17 @@ class _VerificationPageState extends State<VerificationPage> {
                             Navigator.pushNamed(context, Routes.clarify);
                           },
                           child: Container(
-                            height: 30,
-                            width: 70,
+                            height: 30.h,
+                            width: 70.w,
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(3),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text(
                                 "Next",
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 13),
+                                    color: Colors.white, fontSize: 13.sp),
                               ),
                             ),
                           ),
@@ -238,8 +240,8 @@ class _VerificationPageState extends State<VerificationPage> {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 13,
+            SizedBox(
+              height: 13.h,
             ),
             const Spacer(),
           ],

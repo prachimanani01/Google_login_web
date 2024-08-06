@@ -20,64 +20,6 @@ class _GooglePageState extends State<GooglePage> {
         ),
         child: Column(
           children: [
-            Container(
-              height: 45,
-              width: double.infinity,
-              decoration: const BoxDecoration(color: Color(0xff172030)),
-              child: Row(
-                children: [
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    height: 30,
-                    width: 30,
-                    decoration: BoxDecoration(
-                      color: Color(0xff333C4D),
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Icon(
-                      Icons.keyboard_arrow_down_sharp,
-                      color: Colors.white,
-                    ),
-                  ),
-                  // Container(
-                  //   height: 30,
-                  //   width: 100,
-                  //   decoration: BoxDecoration(
-                  //     color: Color(0xff333C4D),
-                  //     borderRadius: BorderRadius.only(
-                  //       topLeft: Radius.circular(8),
-                  //       topRight: Radius.circular(8),
-                  //     ),
-                  //   ),
-                  // ),
-                  Spacer(),
-                  Icon(
-                    Icons.remove,
-                    color: Colors.white,
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Icon(
-                    Icons.copy,
-                    color: Colors.white,
-                    size: 17,
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Icon(
-                    Icons.close,
-                    color: Colors.white,
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                ],
-              ),
-            ),
             const SizedBox(
               height: 10,
             ),
@@ -117,7 +59,7 @@ class _GooglePageState extends State<GooglePage> {
                     color: Color(0xff172030),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Row(
+                  child: const Row(
                     children: [
                       SizedBox(
                         width: 10,
@@ -145,7 +87,7 @@ class _GooglePageState extends State<GooglePage> {
                         color: Colors.white,
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 15,
                       ),
                     ],
                   ),
@@ -348,7 +290,7 @@ class _GooglePageState extends State<GooglePage> {
               ],
             ),
             const SizedBox(
-              height: 60,
+              height: 80,
             ),
             const Text(
               "Google",
@@ -399,7 +341,7 @@ class _GooglePageState extends State<GooglePage> {
               ),
             ),
             const SizedBox(
-              height: 270,
+              height: 310,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,

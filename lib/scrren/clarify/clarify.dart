@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/routes.dart';
 
 class Clarify extends StatefulWidget {
@@ -15,8 +15,8 @@ class _ClarifyState extends State<Clarify> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: double.infinity,
-        width: double.infinity,
+        height: double.infinity.h,
+        width: double.infinity.w,
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/image.png"),
@@ -25,41 +25,41 @@ class _ClarifyState extends State<Clarify> {
         ),
         child: Column(
           children: [
-            const SizedBox(
-              height: 150,
+            SizedBox(
+              height: 150.h,
             ),
             const CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://avatars.githubusercontent.com/u/144036679?v=4"),
               radius: 50,
             ),
-            const SizedBox(
-              height: 15,
+            SizedBox(
+              height: 15.h,
             ),
-            const Text(
+            Text(
               "Turn on sync",
               style: TextStyle(
-                  fontSize: 30, fontWeight: FontWeight.w600, wordSpacing: 2),
+                  fontSize: 30.sp, fontWeight: FontWeight.w600, wordSpacing: 2),
             ),
-            const Text(
+            Text(
               "Back up your stuff and use it on any device",
               style: TextStyle(
-                fontSize: 17,
+                fontSize: 17.sp,
                 color: Colors.black54,
               ),
             ),
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: 20.h,
             ),
             Container(
-              height: 170,
-              width: 450,
+              height: 170.h,
+              width: 450.w,
               decoration: BoxDecoration(
                 color: Color(0xffF8F9FA),
                 borderRadius: BorderRadius.circular(20),
               ),
               padding: EdgeInsets.all(16),
-              child: const Column(
+              child: Column(
                 children: [
                   Row(
                     children: [
@@ -68,16 +68,16 @@ class _ClarifyState extends State<Clarify> {
                         color: Colors.blue,
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       Text(
                         "Bookmarks",
-                        style: TextStyle(fontSize: 13),
+                        style: TextStyle(fontSize: 13.sp),
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 10.h,
                   ),
                   Row(
                     children: [
@@ -86,16 +86,16 @@ class _ClarifyState extends State<Clarify> {
                         color: Colors.blue,
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       Text(
                         "Autofill",
-                        style: TextStyle(fontSize: 13),
+                        style: TextStyle(fontSize: 13.sp),
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 10.h,
                   ),
                   Row(
                     children: [
@@ -104,16 +104,16 @@ class _ClarifyState extends State<Clarify> {
                         color: Colors.blue,
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       Text(
                         "Extensions",
-                        style: TextStyle(fontSize: 13),
+                        style: TextStyle(fontSize: 13.sp),
                       ),
                     ],
                   ),
                   SizedBox(
-                    height: 10,
+                    height: 10.h,
                   ),
                   Row(
                     children: [
@@ -122,11 +122,11 @@ class _ClarifyState extends State<Clarify> {
                         color: Colors.blue,
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       Text(
                         "History and more",
-                        style: TextStyle(fontSize: 13),
+                        style: TextStyle(fontSize: 13.sp),
                       ),
                     ],
                   ),
@@ -134,23 +134,23 @@ class _ClarifyState extends State<Clarify> {
               ),
             ),
             SizedBox(
-              height: 15,
+              height: 15.h,
             ),
             Text(
               "You can always choose what to sync in settings. Google may personalize Search and other\n                                          services based on your history.",
-              style: TextStyle(fontSize: 10),
+              style: TextStyle(fontSize: 10.sp),
             ),
             SizedBox(
-              height: 110,
+              height: 110.h,
             ),
             Row(
               children: [
                 SizedBox(
-                  width: 20,
+                  width: 20.w,
                 ),
                 Container(
-                  height: 30,
-                  width: 100,
+                  height: 30.h,
+                  width: 100.w,
                   decoration: BoxDecoration(
                     color: Colors.transparent,
                     borderRadius: BorderRadius.circular(15),
@@ -158,10 +158,10 @@ class _ClarifyState extends State<Clarify> {
                       color: Colors.blue.shade200,
                     ),
                   ),
-                  child: const Center(
+                  child: Center(
                     child: Text(
                       "Settings",
-                      style: TextStyle(color: Colors.blue, fontSize: 13),
+                      style: TextStyle(color: Colors.blue, fontSize: 13.sp),
                     ),
                   ),
                 ),
@@ -171,26 +171,26 @@ class _ClarifyState extends State<Clarify> {
                     Navigator.pushNamed(context, Routes.googlePage);
                   },
                   child: Container(
-                    height: 30,
-                    width: 100,
+                    height: 30.h,
+                    width: 100.w,
                     decoration: BoxDecoration(
                       color: Colors.blue,
                       borderRadius: BorderRadius.circular(15),
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Text(
                         "Yes, I'm in",
-                        style: TextStyle(color: Colors.white, fontSize: 13),
+                        style: TextStyle(color: Colors.white, fontSize: 13.sp),
                       ),
                     ),
                   ),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Container(
-                  height: 30,
-                  width: 100,
+                  height: 30.h,
+                  width: 100.w,
                   decoration: BoxDecoration(
                     color: Colors.transparent,
                     borderRadius: BorderRadius.circular(15),
@@ -198,15 +198,15 @@ class _ClarifyState extends State<Clarify> {
                       color: Colors.blue.shade200,
                     ),
                   ),
-                  child: const Center(
+                  child: Center(
                     child: Text(
                       "No thanks",
-                      style: TextStyle(color: Colors.blue, fontSize: 13),
+                      style: TextStyle(color: Colors.blue, fontSize: 13.sp),
                     ),
                   ),
                 ),
                 SizedBox(
-                  width: 20,
+                  width: 20.w,
                 ),
               ],
             ),
