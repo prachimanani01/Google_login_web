@@ -229,7 +229,9 @@ class _VerificationPageState extends State<VerificationPage> {
                               child: Text(
                                 "Next",
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 13.sp),
+                                  color: Colors.white,
+                                  fontSize: 13.sp,
+                                ),
                               ),
                             ),
                           ),

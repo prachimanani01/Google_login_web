@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class GooglePage extends StatefulWidget {
   const GooglePage({super.key});
@@ -13,20 +14,20 @@ class _GooglePageState extends State<GooglePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: double.infinity,
-        width: double.infinity,
+        height: double.infinity.h,
+        width: double.infinity.w,
         decoration: const BoxDecoration(
           color: Color(0xff333C4D),
         ),
         child: Column(
           children: [
-            const SizedBox(
-              height: 10,
+            SizedBox(
+              height: 10.h,
             ),
             Row(
               children: [
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Icon(
                   Icons.arrow_back,
@@ -34,7 +35,7 @@ class _GooglePageState extends State<GooglePage> {
                   size: 20,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Icon(
                   Icons.arrow_forward,
@@ -42,7 +43,7 @@ class _GooglePageState extends State<GooglePage> {
                   size: 20,
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
                 Icon(
                   Icons.refresh,
@@ -50,19 +51,19 @@ class _GooglePageState extends State<GooglePage> {
                   size: 20,
                 ),
                 SizedBox(
-                  width: 20,
+                  width: 20.w,
                 ),
                 Container(
-                  height: 40,
-                  width: 1299,
+                  height: 40.h,
+                  width: 1299.w,
                   decoration: BoxDecoration(
                     color: Color(0xff172030),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: const Row(
+                  child: Row(
                     children: [
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       CircleAvatar(
                         backgroundColor: Color(0xff333C4D),
@@ -74,7 +75,7 @@ class _GooglePageState extends State<GooglePage> {
                         ),
                       ),
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       Text(
                         "Search Google or type a URL",
@@ -87,13 +88,13 @@ class _GooglePageState extends State<GooglePage> {
                         color: Colors.white,
                       ),
                       SizedBox(
-                        width: 15,
+                        width: 15.w,
                       ),
                     ],
                   ),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Icon(
                   Icons.extension_outlined,
@@ -101,14 +102,14 @@ class _GooglePageState extends State<GooglePage> {
                   size: 22,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Text(
                   "|",
                   style: TextStyle(color: Colors.white24, fontSize: 22),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 const CircleAvatar(
                   backgroundImage: NetworkImage(
@@ -116,7 +117,7 @@ class _GooglePageState extends State<GooglePage> {
                   radius: 13,
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Icon(
                   Icons.more_vert,
@@ -125,106 +126,106 @@ class _GooglePageState extends State<GooglePage> {
                 ),
               ],
             ),
-            const SizedBox(
-              height: 10,
+            SizedBox(
+              height: 10.h,
             ),
-            const Row(
+            Row(
               children: [
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
                 Icon(
                   Icons.folder_outlined,
                   color: Colors.white54,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 5.w,
                 ),
                 Text(
                   "RNW Acedemic",
                   style: TextStyle(color: Colors.white54, fontSize: 12),
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
                 Icon(
                   Icons.folder_outlined,
                   color: Colors.white54,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 5.w,
                 ),
                 Text(
                   "Attendence",
                   style: TextStyle(color: Colors.white54, fontSize: 12),
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
                 Icon(
                   Icons.folder_outlined,
                   color: Colors.white54,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 5.w,
                 ),
                 Text(
                   "Dailt Report",
                   style: TextStyle(color: Colors.white54, fontSize: 12),
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
                 Icon(
                   Icons.folder_outlined,
                   color: Colors.white54,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 5.w,
                 ),
                 Text(
                   "Question Bank",
-                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                  style: TextStyle(color: Colors.white54, fontSize: 12.sp),
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
                 Icon(
                   Icons.folder_outlined,
                   color: Colors.white54,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 5.w,
                 ),
                 Text(
                   "Study Material",
                   style: TextStyle(color: Colors.white54, fontSize: 12),
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
                 Icon(
                   Icons.folder_outlined,
                   color: Colors.white54,
                 ),
                 SizedBox(
-                  width: 5,
+                  width: 5.w,
                 ),
                 Text(
                   "DSA",
-                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                  style: TextStyle(color: Colors.white54, fontSize: 12.sp),
                 ),
                 Spacer(),
                 Text(
                   ">>",
-                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                  style: TextStyle(color: Colors.white54, fontSize: 12.sp),
                 ),
                 SizedBox(
                   width: 15,
                 ),
                 Text(
                   "|",
-                  style: TextStyle(color: Colors.white24, fontSize: 18),
+                  style: TextStyle(color: Colors.white24, fontSize: 18.sp),
                 ),
                 SizedBox(
                   width: 15,
@@ -238,17 +239,17 @@ class _GooglePageState extends State<GooglePage> {
                 ),
                 Text(
                   "All Bookmarks",
-                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                  style: TextStyle(color: Colors.white54, fontSize: 12.sp),
                 ),
                 SizedBox(
-                  width: 10,
+                  width: 10.w,
                 ),
               ],
             ),
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: 20.h,
             ),
-            const Row(
+            Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Text(
@@ -256,28 +257,28 @@ class _GooglePageState extends State<GooglePage> {
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
                 Text(
                   "Images",
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
-                  width: 20,
+                  width: 20.w,
                 ),
                 Icon(
                   Icons.science_outlined,
                   color: Colors.white,
                 ),
                 SizedBox(
-                  width: 20,
+                  width: 20.w,
                 ),
                 Icon(
                   Icons.apps,
                   color: Colors.white,
                 ),
                 SizedBox(
-                  width: 20,
+                  width: 20.w,
                 ),
                 CircleAvatar(
                   backgroundImage: NetworkImage(
@@ -285,12 +286,12 @@ class _GooglePageState extends State<GooglePage> {
                   radius: 18,
                 ),
                 SizedBox(
-                  width: 15,
+                  width: 15.w,
                 ),
               ],
             ),
-            const SizedBox(
-              height: 80,
+            SizedBox(
+              height: 80.h,
             ),
             const Text(
               "Google",

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/routes.dart';
 
 class PasswordPage extends StatefulWidget {
@@ -16,15 +16,15 @@ class _PasswordPageState extends State<PasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: double.infinity,
-        width: double.infinity,
+        height: double.infinity.h,
+        width: double.infinity.w,
         decoration: const BoxDecoration(color: Colors.white),
         child: Column(
           children: [
             const Spacer(),
             Container(
-              height: 460,
-              width: 400,
+              height: 460.h,
+              width: 400.w,
               decoration: BoxDecoration(
                 color: Colors.transparent,
                 border: Border.all(color: Colors.grey.shade300),
@@ -33,52 +33,52 @@ class _PasswordPageState extends State<PasswordPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const SizedBox(
-                    height: 40,
+                  SizedBox(
+                    height: 40.h,
                   ),
-                  const Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "G",
                         style: TextStyle(
                           color: Colors.blue,
-                          fontSize: 22,
+                          fontSize: 22.sp,
                         ),
                       ),
                       Text(
                         "o",
                         style: TextStyle(
                           color: Colors.red,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "o",
                         style: TextStyle(
                           color: Colors.yellow,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "g",
                         style: TextStyle(
                           color: Colors.blue,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "l",
                         style: TextStyle(
                           color: Colors.green,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                       Text(
                         "e",
                         style: TextStyle(
                           color: Colors.red,
-                          fontSize: 19,
+                          fontSize: 19.sp,
                         ),
                       ),
                     ],
@@ -86,16 +86,16 @@ class _PasswordPageState extends State<PasswordPage> {
                   const SizedBox(
                     height: 7,
                   ),
-                  const Text(
+                  Text(
                     "Welcome",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20.sp),
                   ),
-                  const SizedBox(
-                    height: 6,
+                  SizedBox(
+                    height: 6.h,
                   ),
                   Container(
-                    height: 25,
-                    width: 250,
+                    height: 25.h,
+                    width: 250.w,
                     decoration: BoxDecoration(
                       color: Colors.transparent,
                       border: Border.all(color: Colors.grey.shade300),
@@ -116,11 +116,11 @@ class _PasswordPageState extends State<PasswordPage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 60,
+                  SizedBox(
+                    height: 60.h,
                   ),
                   Container(
-                    height: 45,
+                    height: 45.h,
                     width: double.infinity,
                     margin: const EdgeInsets.only(
                       left: 30,
@@ -131,14 +131,14 @@ class _PasswordPageState extends State<PasswordPage> {
                       border: Border.all(color: Colors.grey.shade300),
                       borderRadius: BorderRadius.circular(6),
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Padding(
                         padding: EdgeInsets.only(left: 10),
                         child: TextField(
                           decoration: InputDecoration(
                             hintText: "Enter your password",
                             hintStyle: TextStyle(
-                              fontSize: 14,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w400,
                               color: Colors.grey,
                             ),
@@ -148,8 +148,8 @@ class _PasswordPageState extends State<PasswordPage> {
                       ),
                     ),
                   ),
-                  const SizedBox(
-                    height: 10,
+                  SizedBox(
+                    height: 10.h,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -183,8 +183,8 @@ class _PasswordPageState extends State<PasswordPage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 35,
+                  SizedBox(
+                    height: 35.h,
                   ),
                   const Padding(
                     padding: EdgeInsets.only(
@@ -219,8 +219,8 @@ class _PasswordPageState extends State<PasswordPage> {
                                 context, Routes.verificationPage);
                           },
                           child: Container(
-                            height: 30,
-                            width: 70,
+                            height: 30.h,
+                            width: 70.w,
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(3),
