@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../utils/routes.dart';
 
@@ -15,8 +16,8 @@ class _SetProfilePageState extends State<SetProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        height: double.infinity,
-        width: double.infinity,
+        height: double.infinity.h,
+        width: double.infinity.w,
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/image.png"),
@@ -25,12 +26,12 @@ class _SetProfilePageState extends State<SetProfilePage> {
         ),
         child: Column(
           children: [
-            const SizedBox(
-              height: 170,
+            SizedBox(
+              height: 170.h,
             ),
-            const CircleAvatar(
+            CircleAvatar(
               backgroundColor: Color(0xffE9D4FF),
-              radius: 50,
+              radius: 50.w,
               child: Icon(
                 Icons.person,
                 size: 50,
@@ -38,28 +39,28 @@ class _SetProfilePageState extends State<SetProfilePage> {
               ),
             ),
             SizedBox(
-              height: 60,
+              height: 60.h,
             ),
             Text(
               "Set up your new Chrome Profile",
               style: TextStyle(
-                fontSize: 25,
+                fontSize: 25.sp,
                 letterSpacing: 1.5,
                 fontWeight: FontWeight.bold,
               ),
             ),
             SizedBox(
-              height: 13,
+              height: 13.h,
             ),
             Text(
               "To across your Chrome stuff across all your devices, sign in, then turn on sync",
               style: TextStyle(
-                fontSize: 17,
+                fontSize: 17.sp,
                 color: Colors.black87,
               ),
             ),
             SizedBox(
-              height: 45,
+              height: 45.h,
             ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
@@ -76,18 +77,18 @@ class _SetProfilePageState extends State<SetProfilePage> {
                 ),
               ),
             ),
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: 20.h,
             ),
             OutlinedButton(
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(220, 50),
               ),
               onPressed: () {},
-              child: const Text(
+              child: Text(
                 "Continue without an account",
                 style: TextStyle(
-                  fontSize: 12,
+                  fontSize: 12.sp,
                   color: Color(0xff6192E0),
                 ),
               ),

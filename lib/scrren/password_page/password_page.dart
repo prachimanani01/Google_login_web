@@ -10,7 +10,9 @@ class PasswordPage extends StatefulWidget {
 }
 
 class _PasswordPageState extends State<PasswordPage> {
-  bool password = false;
+  bool Password1 = false;
+
+  TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class _PasswordPageState extends State<PasswordPage> {
           children: [
             const Spacer(),
             Container(
-              height: 460.h,
+              height: 520.h,
               width: 400.w,
               decoration: BoxDecoration(
                 color: Colors.transparent,
@@ -83,8 +85,8 @@ class _PasswordPageState extends State<PasswordPage> {
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    height: 7,
+                  SizedBox(
+                    height: 7.h,
                   ),
                   Text(
                     "Welcome",
@@ -119,34 +121,56 @@ class _PasswordPageState extends State<PasswordPage> {
                   SizedBox(
                     height: 60.h,
                   ),
-                  Container(
-                    height: 45.h,
-                    width: double.infinity,
-                    margin: const EdgeInsets.only(
-                      left: 30,
-                      right: 30,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      border: Border.all(color: Colors.grey.shade300),
-                      borderRadius: BorderRadius.circular(6),
-                    ),
-                    child: Center(
-                      child: Padding(
-                        padding: EdgeInsets.only(left: 10),
-                        child: TextField(
-                          decoration: InputDecoration(
-                            hintText: "Enter your password",
-                            hintStyle: TextStyle(
-                              fontSize: 14.sp,
-                              fontWeight: FontWeight.w400,
-                              color: Colors.grey,
+                  Column(
+                    children: [
+                      Center(
+                        child: Padding(
+                          padding: EdgeInsets.all(16),
+                          child: TextFormField(
+                            obscureText: Password1,
+                            controller: passwordController,
+                            obscuringCharacter: '*',
+                            textAlign: TextAlign.start,
+                            textInputAction: TextInputAction.done,
+                            validator: (val) => (val!.isEmpty)
+                                ? "Enter your password..."
+                                : null,
+                            style: const TextStyle(
+                              color: Colors.black,
                             ),
-                            border: InputBorder.none,
+                            keyboardType: TextInputType.text,
+                            decoration: InputDecoration(
+                              labelText: "Enter Your Password",
+                              focusedBorder: const OutlineInputBorder(),
+                              focusedErrorBorder: OutlineInputBorder(
+                                borderSide: const BorderSide(
+                                  color: Colors.red,
+                                  width: 2,
+                                ),
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              enabledBorder: const OutlineInputBorder(
+                                borderSide: BorderSide(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                              errorBorder: OutlineInputBorder(
+                                borderSide: const BorderSide(
+                                  color: Colors.redAccent,
+                                  width: 1,
+                                ),
+                                borderRadius: BorderRadius.circular(14),
+                              ),
+                              labelStyle: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 16.sp,
+                                letterSpacing: 1,
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    ),
+                    ],
                   ),
                   SizedBox(
                     height: 10.h,
@@ -165,20 +189,13 @@ class _PasswordPageState extends State<PasswordPage> {
                         //   ),
                         // ),
                         Checkbox(
-                          value: password,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5),
-                          ),
-                          activeColor: Colors.blue,
-                          checkColor: Colors.white,
-                          side: BorderSide(
-                            color: Colors.grey,
-                          ),
-                          onChanged: (value) {
-                            password = value!;
-                            setState(() {});
-                          },
-                        ),
+                            value: Password1,
+                            activeColor: Colors.blue,
+                            checkColor: Colors.white,
+                            onChanged: (val) {
+                              Password1 = val!;
+                              setState(() {});
+                            }),
                         const Text("Show password"),
                       ],
                     ),
@@ -196,8 +213,8 @@ class _PasswordPageState extends State<PasswordPage> {
                       left: 30,
                     ),
                   ),
-                  const SizedBox(
-                    height: 50,
+                  SizedBox(
+                    height: 50.h,
                   ),
                   Padding(
                     padding: const EdgeInsets.only(
@@ -225,11 +242,11 @@ class _PasswordPageState extends State<PasswordPage> {
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(3),
                             ),
-                            child: const Center(
+                            child: Center(
                               child: Text(
                                 "Next",
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 13),
+                                    color: Colors.white, fontSize: 13.sp),
                               ),
                             ),
                           ),
@@ -240,10 +257,10 @@ class _PasswordPageState extends State<PasswordPage> {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 13,
+            SizedBox(
+              height: 13.h,
             ),
-            const Center(
+            Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -253,19 +270,19 @@ class _PasswordPageState extends State<PasswordPage> {
                   ),
                   Icon(Icons.arrow_drop_down),
                   SizedBox(
-                    width: 80,
+                    width: 80.w,
                   ),
                   Text(
                     "Help",
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 10.w,
                   ),
                   Text(
                     "Privacy",
                   ),
                   SizedBox(
-                    width: 10,
+                    width: 10.w,
                   ),
                   Text(
                     "Terms",

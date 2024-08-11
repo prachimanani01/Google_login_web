@@ -28,10 +28,10 @@ class _ClarifyState extends State<Clarify> {
             SizedBox(
               height: 150.h,
             ),
-            const CircleAvatar(
+            CircleAvatar(
               backgroundImage: NetworkImage(
                   "https://avatars.githubusercontent.com/u/144036679?v=4"),
-              radius: 50,
+              radius: 50.w,
             ),
             SizedBox(
               height: 15.h,
