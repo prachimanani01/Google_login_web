@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_login_website/scrren/signin_page/signnin_page.dart';
 import '../../utils/routes.dart';
 
 class PasswordPage extends StatefulWidget {
@@ -10,7 +11,7 @@ class PasswordPage extends StatefulWidget {
 }
 
 class _PasswordPageState extends State<PasswordPage> {
-  bool Password1 = false;
+  bool Password1 = true;
 
   TextEditingController passwordController = TextEditingController();
 
@@ -103,15 +104,20 @@ class _PasswordPageState extends State<PasswordPage> {
                       border: Border.all(color: Colors.grey.shade300),
                       borderRadius: BorderRadius.circular(17),
                     ),
-                    child: const Row(
+                    child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.person_pin,
                           size: 18,
                         ),
-                        Text("prachimanani16@gmail.com"),
-                        Icon(
+                        Text(
+                          email,
+                          style: const TextStyle(
+                            color: Colors.black,
+                          ),
+                        ),
+                        const Icon(
                           Icons.keyboard_arrow_down_outlined,
                           size: 18,
                         ),
@@ -127,7 +133,7 @@ class _PasswordPageState extends State<PasswordPage> {
                         child: Padding(
                           padding: EdgeInsets.all(16),
                           child: TextFormField(
-                            obscureText: Password1,
+                            obscureText: !Password1,
                             controller: passwordController,
                             obscuringCharacter: '*',
                             textAlign: TextAlign.start,

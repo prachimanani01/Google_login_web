@@ -297,8 +297,8 @@ class _GooglePageState extends State<GooglePage> {
               "Google",
               style: TextStyle(color: Color(0xffA9C7FF), fontSize: 70),
             ),
-            const SizedBox(
-              height: 20,
+            SizedBox(
+              height: 20.h,
             ),
             Container(
               height: 40,
@@ -341,23 +341,98 @@ class _GooglePageState extends State<GooglePage> {
                 ],
               ),
             ),
+            SizedBox(
+              height: 40.h,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      "https://yt3.googleusercontent.com/584JjRp5QMuKbyduM_2k5RlXFqHJtQ0qLIPZpwbUjMJmgzZngHcam5JMuZQxyzGMV5ljwJRl0Q=s900-c-k-c0x00ffffff-no-rj"),
+                  radius: 22,
+                ),
+                SizedBox(
+                  width: 70.w,
+                ),
+                CircleAvatar(
+                  radius: 22,
+                  backgroundColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 16,
+                    backgroundImage: NetworkImage(
+                        "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4d/43/44/4d4344cd-7855-06c9-f66e-5eb2ba264b7c/Prod-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x600wa.png"),
+                  ),
+                ),
+                SizedBox(
+                  width: 70.w,
+                ),
+                CircleAvatar(
+                  radius: 22,
+                  backgroundColor: Colors.white,
+                  child: CircleAvatar(
+                    radius: 14,
+                    backgroundImage: NetworkImage(
+                        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzYwiTtqN40gtpOBF0VUSIFvuGbn8mjMvRNA&s"),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 7.h,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Youtube",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 13.sp,
+                  ),
+                ),
+                SizedBox(
+                  width: 70.w,
+                ),
+                Text(
+                  "  Insta",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 13.sp,
+                  ),
+                ),
+                SizedBox(
+                  width: 40.w,
+                ),
+                Text(
+                  "             Snap",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 13.sp,
+                  ),
+                ),
+                SizedBox(
+                  width: 10.w,
+                ),
+              ],
+            ),
             const SizedBox(
-              height: 310,
+              height: 190,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Container(
-                  height: 30,
-                  width: 150,
+                  height: 30.h,
+                  width: 150.w,
                   decoration: BoxDecoration(
                     color: Color(0xff1E477E),
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: const Row(
+                  child: Row(
                     children: [
                       SizedBox(
-                        width: 10,
+                        width: 10.w,
                       ),
                       Icon(
                         Icons.edit,
@@ -369,13 +444,13 @@ class _GooglePageState extends State<GooglePage> {
                       ),
                       Text(
                         "Customize Chrome",
-                        style: TextStyle(color: Colors.white, fontSize: 12),
+                        style: TextStyle(color: Colors.white, fontSize: 12.sp),
                       ),
                     ],
                   ),
                 ),
-                const SizedBox(
-                  width: 10,
+                SizedBox(
+                  width: 10.w,
                 )
               ],
             ),

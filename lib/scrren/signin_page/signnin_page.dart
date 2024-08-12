@@ -3,6 +3,8 @@ import 'package:country_picker/country_picker.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/routes.dart';
 
+String email = "";
+
 class SignninPage extends StatefulWidget {
   const SignninPage({super.key});
 
@@ -141,6 +143,9 @@ class _SignninPageState extends State<SignninPage> {
                                   borderRadius: BorderRadius.circular(10),
                                 ),
                               ),
+                              onSaved: (value) {
+                                email = value!;
+                              },
                               validator: (value) {
                                 if (value == null || value.isEmpty) {
                                   return 'Please enter your email';
@@ -238,8 +243,11 @@ class _SignninPageState extends State<SignninPage> {
                             child: GestureDetector(
                               onTap: () {
                                 if (formKey.currentState!.validate()) {
+                                  formKey.currentState!.save();
                                   Navigator.pushNamed(
-                                      context, Routes.passwordPage);
+                                    context,
+                                    Routes.passwordPage,
+                                  );
                                 }
                               },
                               child: Container(
