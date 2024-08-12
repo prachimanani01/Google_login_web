@@ -248,7 +248,9 @@ class _PasswordPageState extends State<PasswordPage> {
                               child: Text(
                                 "Next",
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 13.sp),
+                                  color: Colors.white,
+                                  fontSize: 13.sp,
+                                ),
                               ),
                             ),
                           ),
