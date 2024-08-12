@@ -233,7 +233,9 @@ class _PasswordPageState extends State<PasswordPage> {
                         GestureDetector(
                           onTap: () {
                             Navigator.pushNamed(
-                                context, Routes.verificationPage);
+                              context,
+                              Routes.verificationPage,
+                            );
                           },
                           child: Container(
                             height: 30.h,
