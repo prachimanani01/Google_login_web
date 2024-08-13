@@ -59,7 +59,7 @@ This project is licensed under the MIT License. See the [LICENSE](https://github
 
 <br>
 
-Thank you for checking out the OYO App!
+Thank you for checking out the Google login website!
 
 
 
